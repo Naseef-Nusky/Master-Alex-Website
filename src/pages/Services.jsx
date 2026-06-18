@@ -20,33 +20,41 @@ export default function Services() {
             {TOP_SERVICES.map((service, i) => {
               const isLastAlone = i === TOP_SERVICES.length - 1 && TOP_SERVICES.length % 3 === 1
               return (
-              <Link
+              <div
                 key={service.path}
-                to={service.path}
-                className={`group card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col ${
+                className={`group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col ${
                   isLastAlone
                     ? 'sm:col-span-2 sm:max-w-md sm:justify-self-center sm:w-full lg:col-span-1 lg:col-start-2'
                     : ''
                 }`}
               >
-                <div className="rounded-xl overflow-hidden mb-4 bg-master-surface border border-gray-100">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-auto block object-contain"
-                  />
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-auto block object-contain"
+                />
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-bold text-master-purple mb-2">{service.title}</h3>
+                  <p className="text-master-muted text-sm leading-relaxed flex-1 mb-4">{service.description}</p>
+                  <div className="flex flex-wrap items-center justify-between gap-3 mt-auto">
+                    <Link
+                      to={service.path}
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-master-gold hover:gap-2 transition-all"
+                    >
+                      Read More
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                    <Link
+                      to="/book-appointment"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-master-purple text-white text-sm font-semibold rounded-xl hover:bg-master-purple-light transition-colors"
+                    >
+                      Book An Appointment
+                    </Link>
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-master-purple mb-2 group-hover:text-master-gold transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-master-muted text-sm leading-relaxed flex-1 mb-4">{service.description}</p>
-                <span className="text-sm font-semibold text-master-gold flex items-center gap-1">
-                  Explore service
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
-              </Link>
+              </div>
               )
             })}
           </div>

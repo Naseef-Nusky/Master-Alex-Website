@@ -1,5 +1,7 @@
-import { BANNER_IMAGES } from './bannerImages'
 import removeNegative from '../assets/remove_negative.png'
+import trustedMethods from '../assets/trusted_methods.png'
+import trustedExpert from '../assets/trusted-expert.png'
+import experienceInner from '../assets/experience-inner.png'
 
 export const HERO_SLIDES = [
   {
@@ -17,7 +19,7 @@ export const HERO_SLIDES = [
     mainWord: 'TRUSTED',
     accentWord: 'Methods to',
     lines: ['Restore Your Relationship', 'and Love'],
-    image: BANNER_IMAGES['/get-ex-love-back'],
+    image: trustedMethods,
     path: '/get-ex-love-back',
   },
   {
@@ -26,7 +28,7 @@ export const HERO_SLIDES = [
     mainWord: 'TRUSTED',
     accentWord: 'Expert',
     lines: ['Love Spell Caster for True', 'Relationship Harmony'],
-    image: BANNER_IMAGES['/love-spell-caster'],
+    image: trustedExpert,
     path: '/love-spell-caster',
   },
   {
@@ -35,7 +37,7 @@ export const HERO_SLIDES = [
     mainWord: 'EXPERIENCE',
     accentWord: 'Inner',
     lines: ['Peace with Effective Aura', 'Cleaning Techniques'],
-    image: BANNER_IMAGES['/spiritual-healing'],
+    image: experienceInner,
     path: '/spiritual-healing',
   },
 ]
