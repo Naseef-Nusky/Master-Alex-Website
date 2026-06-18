@@ -78,7 +78,7 @@ function ServiceCard({ service, index }) {
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout heroBehindHeader>
       <HeroSlider />
 
       {/* Religions */}

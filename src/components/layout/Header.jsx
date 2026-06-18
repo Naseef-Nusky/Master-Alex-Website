@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { NAV_LINKS, SERVICE_LINKS, SITE } from '../../constants/siteData'
 import logo from '../../assets/slider/logo-removebg.png'
 
-export default function Header() {
+export default function Header({ overlay = false }) {
   const [scrolled, setScrolled] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -17,12 +17,13 @@ export default function Header() {
   const linkClass = ({ isActive }) =>
     `text-sm font-medium transition-colors ${isActive ? 'text-master-gold' : 'text-white/80 hover:text-white'}`
 
+  const positionClass = overlay ? 'fixed' : 'sticky'
+  const headerClass = `${positionClass} top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/5 ${
+    scrolled ? 'header-gradient-scrolled backdrop-blur-xl shadow-lg' : 'header-gradient'
+  }`
+
   return (
-    <header
-      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/5 ${
-        scrolled ? 'header-gradient-scrolled backdrop-blur-xl shadow-lg' : 'header-gradient'
-      }`}
-    >
+    <header className={headerClass}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="relative flex items-center h-28 sm:h-32">
           {/* Left — navigation */}
@@ -32,8 +33,24 @@ export default function Header() {
                 {link.label}
               </NavLink>
             ))}
+          </nav>
+
+          {/* Center — logo */}
+          <Link
+            to="/"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center group z-10"
+          >
+            <img
+              src={logo}
+              alt={SITE.name}
+              className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain group-hover:scale-105 transition-transform"
+            />
+          </Link>
+
+          {/* Right — Services, CTA + mobile menu */}
+          <div className="flex items-center gap-6 flex-1 justify-end ml-auto lg:ml-0">
             <div
-              className="relative"
+              className="relative hidden lg:block"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
@@ -44,7 +61,7 @@ export default function Header() {
                 </svg>
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 pt-3 w-64">
+                <div className="absolute top-full right-0 pt-3 w-64">
                   <div className="bg-master-purple-light/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-2">
                     <Link
                       to="/services"
@@ -66,22 +83,7 @@ export default function Header() {
                 </div>
               )}
             </div>
-          </nav>
 
-          {/* Center — logo */}
-          <Link
-            to="/"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center group z-10"
-          >
-            <img
-              src={logo}
-              alt={SITE.name}
-              className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain group-hover:scale-105 transition-transform"
-            />
-          </Link>
-
-          {/* Right — CTA + mobile menu */}
-          <div className="flex items-center gap-3 flex-1 justify-end ml-auto lg:ml-0">
             <Link
               to="/book-appointment"
               className="hidden lg:inline-flex px-5 py-2.5 bg-master-gold text-master-dark text-sm font-semibold rounded-xl hover:bg-master-gold-light transition-colors"
