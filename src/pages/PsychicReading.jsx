@@ -28,11 +28,8 @@ export default function PsychicReading() {
             'Uncover the ideal professional route',
             'Get rid of doubt and worry about the future',
           ],
-        },
-        {
-          bg: 'surface',
-          heading: '',
-          text: 'Every reading is private and individualized, concentrating only on your energy and inquiries.',
+          afterText:
+            'Every reading is private and individualized, concentrating only on your energy and inquiries.',
           cta: 'whatsapp',
         },
         {
@@ -40,11 +37,6 @@ export default function PsychicReading() {
           heading: 'Love Psychic in London — Answers to Relationship and Love Issues',
           text: 'If you are having difficulty in your love life, a love psychic in London like Master Alex can offer you deep emotional direction. His readings assist couples in finding calm in their relationships by better knowing their partners. Many couples come to him to repair love, increase bonding, and restore faith. He also provides extra services including spiritual cleansing to remove bad energy from both your surroundings and thoughts.',
           cta: 'call',
-        },
-        {
-          bg: 'dark',
-          form: true,
-          heading: 'Contact Us Now',
         },
         {
           bg: 'surface',
@@ -59,6 +51,11 @@ export default function PsychicReading() {
           cta: 'call',
           image: true,
           reverse: true,
+        },
+        {
+          bg: 'dark',
+          form: true,
+          heading: 'Contact Us Now',
         },
       ]}
     />

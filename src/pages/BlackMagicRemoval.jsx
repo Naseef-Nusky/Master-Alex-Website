@@ -27,11 +27,8 @@ export default function BlackMagicRemoval() {
             'Health problems or unexpected arguments',
             'Emotional exhaustion or weakness',
           ],
-        },
-        {
-          bg: 'surface',
-          heading: '',
-          text: 'Master Alex can guide you with customized treatments if you see these signs. To purify your surroundings and increase positivity, you could also explore negative energy removal services with Master Alex.',
+          afterText:
+            'Master Alex can guide you with customized treatments if you see these signs. To purify your surroundings and increase positivity, you could also explore negative energy removal services with Master Alex.',
           cta: 'whatsapp',
         },
         {
@@ -39,11 +36,6 @@ export default function BlackMagicRemoval() {
           heading: 'Reliable Black Magic Expert in London',
           text: 'Master Alex, a well-known black magic expert in London, has assisted several people in overcoming years of spiritual conflict. To counteract negative influences, he applies energy balancing, traditional mantras, and defensive rites. His methods strengthen your aura to avoid future attacks as well as eliminate black magic. If black magic is influencing your personal relationships, learn more about how to make sure they do not cause husband and wife issues — he also helps to maintain family harmony.',
           cta: 'call',
-        },
-        {
-          bg: 'dark',
-          form: true,
-          heading: 'Contact Us Now',
         },
         {
           bg: 'surface',
@@ -55,11 +47,8 @@ export default function BlackMagicRemoval() {
             'Defence against forthcoming spells',
             'Positive energy rehabilitation',
           ],
-        },
-        {
-          bg: 'white',
-          heading: '',
-          text: 'If dark influences have impacted your relationships, you may also get assistance from a reputable love spell caster to find solutions to your love problems.',
+          afterText:
+            'If dark influences have impacted your relationships, you may also get assistance from a reputable love spell caster to find solutions to your love problems.',
           cta: 'whatsapp',
         },
         {
@@ -69,6 +58,11 @@ export default function BlackMagicRemoval() {
           cta: 'call',
           image: true,
           reverse: true,
+        },
+        {
+          bg: 'dark',
+          form: true,
+          heading: 'Contact Us Now',
         },
       ]}
     />

@@ -36,11 +36,6 @@ export default function SpiritualHealing() {
         },
         {
           bg: 'white',
-          form: true,
-          heading: 'Contact Us Now',
-        },
-        {
-          bg: 'dark',
           heading: 'Discover the Might of Spiritual Purification',
           text: 'Spiritual cleansing is quite different from spiritual healing. Spiritual cleansing gets rid of all the unfavourable vibes from your aura, your home, your personal space, and even your office. This process is done so that you are always surrounded with good energy. Personalized to fit the spiritual needs of every individual, Master Alex’s healing treatments guarantee long-lasting results and emotional balance.',
           cta: 'call',
@@ -52,6 +47,11 @@ export default function SpiritualHealing() {
           cta: 'whatsapp',
           image: true,
           reverse: true,
+        },
+        {
+          bg: 'dark',
+          form: true,
+          heading: 'Contact Us Now',
         },
       ]}
     />

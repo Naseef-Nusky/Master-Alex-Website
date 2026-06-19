@@ -27,11 +27,8 @@ export default function LoveSpellCaster() {
             'Love marriage spells to dispel barriers and bring harmony',
             'Powerful love spells for couples going through major misunderstandings',
           ],
-        },
-        {
-          bg: 'surface',
-          heading: '',
-          text: 'Spiritual care helps to create these spells. They guard your mental health and infuse real joy into your life.',
+          afterText:
+            'Spiritual care helps to create these spells. They guard your mental health and infuse real joy into your life.',
           cta: 'whatsapp',
         },
         {
@@ -39,11 +36,6 @@ export default function LoveSpellCaster() {
           heading: 'Why Choose a Love Spell Specialist in London?',
           text: 'Londoners have faith in Master Alex because his charms are secure, discreet, and potent. As an accomplished love spell specialist in London, he assists couples in resolving underlying emotional problems and regaining peace. His answers include balance, communication, and understanding in relationships rather than only magic. Through specialized rituals and spiritual counselling, he also offers support for husband and wife troubles if your marriage is problematic and not peaceful.',
           cta: 'call',
-        },
-        {
-          bg: 'dark',
-          form: true,
-          heading: 'Contact Us Now',
         },
         {
           bg: 'surface',
@@ -58,6 +50,11 @@ export default function LoveSpellCaster() {
           cta: 'call',
           image: true,
           reverse: true,
+        },
+        {
+          bg: 'dark',
+          form: true,
+          heading: 'Contact Us Now',
         },
       ]}
     />

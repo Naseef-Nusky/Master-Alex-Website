@@ -1,7 +1,7 @@
 import bannerPsychic from '../assets/banner-Psychic Reading.png'
 import bannerGetEx from '../assets/banner-getbackex.png'
 import bannerBlackMagic from '../assets/banner-blackmagicremoval.png'
-import bannerNegative from '../assets/Negative Energy Removal.png'
+import bannerNegative from '../assets/banner-Negative Energy Removal.png'
 import bannerSpiritual from '../assets/banner-spritualhealing.png'
 import bannerLoveSpell from '../assets/banner-Love Spell Caster.png'
 import bannerHusbandWife from '../assets/banner-Husband & Wife Problem.png'

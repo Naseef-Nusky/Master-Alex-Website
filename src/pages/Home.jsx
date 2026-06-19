@@ -241,23 +241,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
-          <div>
-            <SectionHeading
-              label="Contact"
-              title="Tell Us Your Concerns, We're Here to Help!"
-              description="He will contact you within 24 hours."
-              center={false}
-            />
-          </div>
-          <div className="bg-master-surface rounded-2xl p-8 border border-gray-100 shadow-sm">
-            <ContactForm buttonLabel="Send Message" />
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
       <section className="py-20 px-4 bg-master-surface">
         <div className="max-w-7xl mx-auto">
@@ -293,6 +276,23 @@ export default function Home() {
                 <p className="px-6 pb-4 text-master-muted text-sm leading-relaxed">{faq.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="py-20 px-4 bg-master-surface">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <SectionHeading
+              label="Contact"
+              title="Tell Us Your Concerns, We're Here to Help!"
+              description="He will contact you within 24 hours."
+              center={false}
+            />
+          </div>
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <ContactForm buttonLabel="Send Message" />
           </div>
         </div>
       </section>

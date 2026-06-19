@@ -11,9 +11,9 @@ export default function ContactFormWithSlider({
   return (
     <div className={className}>
       {heading && <h2 className={headingClassName}>{heading}</h2>}
-      <div className="grid md:grid-cols-2 gap-8 lg:gap-10 items-start">
+      <div className="grid md:grid-cols-2 gap-8 lg:gap-10 items-stretch lg:items-center">
         <ContactForm {...formProps} />
-        <ServiceImageSlider className={sliderClassName} />
+        <ServiceImageSlider className={sliderClassName} large />
       </div>
     </div>
   )

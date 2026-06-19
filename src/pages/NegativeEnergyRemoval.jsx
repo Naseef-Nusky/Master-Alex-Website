@@ -27,11 +27,8 @@ export default function NegativeEnergyRemoval() {
             'Recurring failures or misfortune',
             'Tension in families or relationships; fighting among family members',
           ],
-        },
-        {
-          bg: 'surface',
-          heading: '',
-          text: 'Should these issues be recognizable, it is time to purify your environment. To recover your spiritual and emotional equilibrium, you may also investigate energy healing sessions with Master Alex.',
+          afterText:
+            'Should these issues be recognizable, it is time to purify your environment. To recover your spiritual and emotional equilibrium, you may also investigate energy healing sessions with Master Alex.',
           cta: 'whatsapp',
         },
         {
@@ -39,11 +36,6 @@ export default function NegativeEnergyRemoval() {
           heading: 'Process Involved in Dark Energy Removal by Master Alex',
           text: 'Master Alex, a spiritual healer, performs dark energy removal by means of a combination of prayers, astrology, and energy balancing. His methods work well for families and people alike — they are safe and conventional. Your London sessions let you release unwanted energy impeding your achievement and serenity. He also leads customers through spiritual cleansing ceremonies to keep negativity out and sustain lifelong optimism in life.',
           cta: 'call',
-        },
-        {
-          bg: 'dark',
-          form: true,
-          heading: 'Contact Us Now',
         },
         {
           bg: 'surface',
@@ -55,11 +47,8 @@ export default function NegativeEnergyRemoval() {
             'More powerful spiritual guard',
             'Enhanced concentration and constructive thinking',
           ],
-        },
-        {
-          bg: 'white',
-          heading: '',
-          text: 'These good things happen when clean energy surrounds you. This attracts fresh possibilities and joy into your life.',
+          afterText:
+            'These good things happen when clean energy surrounds you. This attracts fresh possibilities and joy into your life.',
           cta: 'whatsapp',
         },
         {
@@ -69,6 +58,11 @@ export default function NegativeEnergyRemoval() {
           cta: 'call',
           image: true,
           reverse: true,
+        },
+        {
+          bg: 'dark',
+          form: true,
+          heading: 'Contact Us Now',
         },
       ]}
     />

@@ -4,7 +4,7 @@ import { TOP_SERVICES } from '../../constants/siteData'
 
 const DURATION = 4000
 
-export default function ServiceImageSlider({ className = '' }) {
+export default function ServiceImageSlider({ className = '', large = false }) {
   const [active, setActive] = useState(0)
 
   useEffect(() => {
@@ -14,9 +14,17 @@ export default function ServiceImageSlider({ className = '' }) {
     return () => clearInterval(timer)
   }, [])
 
+  const wrapperClass = large
+    ? 'w-full max-w-full mx-auto'
+    : 'w-full max-w-[300px] sm:max-w-[340px] mx-auto lg:mx-0 lg:ml-auto'
+
+  const frameClass = large
+    ? 'h-80 sm:h-96 md:h-[26rem] lg:h-[30rem]'
+    : 'h-72 sm:h-80'
+
   return (
-    <div className={`w-full max-w-[300px] sm:max-w-[340px] mx-auto lg:mx-0 lg:ml-auto ${className}`}>
-      <div className="relative rounded-xl overflow-hidden shadow-md bg-master-dark border border-gray-100 h-72 sm:h-80">
+    <div className={`${wrapperClass} ${className}`}>
+      <div className={`relative rounded-xl overflow-hidden shadow-md bg-master-dark border border-gray-100 ${frameClass}`}>
         {TOP_SERVICES.map((service, i) => (
           <Link
             key={service.path}

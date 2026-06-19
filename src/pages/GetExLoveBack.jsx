@@ -34,20 +34,12 @@ export default function GetExLoveBack() {
             'Proposes cures for quicker reconciliation',
             'Balances sentiments and strengthens mutual understanding',
           ],
-        },
-        {
-          bg: 'white',
-          heading: '',
-          text: 'You can also attend sessions on negative energy removal to clear emotional barriers if negativity is starting to impact your relationship.',
+          afterText:
+            'You can also attend sessions on negative energy removal to clear emotional barriers if negativity is starting to impact your relationship.',
           cta: 'call',
         },
         {
-          bg: 'dark',
-          form: true,
-          heading: 'Contact Us Now',
-        },
-        {
-          bg: 'surface',
+          bg: 'white',
           heading: 'Fast and Effective Methods to Get Ex Back',
           text: 'Astrology offers tried-and-true strategies to assist if you are wondering how to get your ex back and revive your relationship. To enhance emotional attachment and bring your partner back into your life, Master Alex employs horoscope matching, love spells, and planetary assessment. Advantages of his sessions include:',
           list: [
@@ -55,11 +47,8 @@ export default function GetExLoveBack() {
             'Provides emotional tranquillity',
             'Enhances compatibility',
           ],
-        },
-        {
-          bg: 'white',
-          heading: '',
-          text: 'You might also look into guidance from a love spell caster for quicker results to improve marriage healing.',
+          afterText:
+            'You might also look into guidance from a love spell caster for quicker results to improve marriage healing.',
           cta: 'whatsapp',
         },
         {
@@ -69,6 +58,11 @@ export default function GetExLoveBack() {
           cta: 'call',
           image: true,
           reverse: true,
+        },
+        {
+          bg: 'dark',
+          form: true,
+          heading: 'Contact Us Now',
         },
       ]}
     />

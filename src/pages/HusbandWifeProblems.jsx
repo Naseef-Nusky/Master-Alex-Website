@@ -24,15 +24,12 @@ export default function HusbandWifeProblems() {
             'Financial constraint or family involvement',
             'Misconceptions that develop over time',
           ],
+          afterText:
+            'Good spiritual practices and professional guidance can help to cure these issues. To improve your connection and bring balance back to your marriage, you may also look at the sessions conducted by Master Alex, the love back specialist. He brings back the love you once lost and restores your relationship with love and passion.',
+          cta: 'whatsapp',
         },
       ]}
       sections={[
-        {
-          bg: 'surface',
-          heading: '',
-          text: 'Good spiritual practices and professional guidance can help to cure these issues. To improve your connection and bring balance back to your marriage, you may also look at the sessions conducted by Master Alex, the love back specialist. He brings back the love you once lost and restores your relationship with love and passion.',
-          cta: 'whatsapp',
-        },
         {
           bg: 'dark',
           heading: 'How Astrology Helps to Get Husband Back or Get Your Wife Back?',
@@ -48,25 +45,22 @@ export default function HusbandWifeProblems() {
             'Energy cleaning to erase bitterness',
             'Solutions to help love and understanding grow',
           ],
-        },
-        {
-          bg: 'white',
-          heading: '',
-          text: 'These practices not only relieve emotional suffering but also help couples develop a closer spiritual relationship.',
+          afterText:
+            'These practices not only relieve emotional suffering but also help couples develop a closer spiritual relationship.',
           cta: 'whatsapp',
         },
         {
           bg: 'dark',
-          form: true,
-          heading: 'Contact Us Now',
-        },
-        {
-          bg: 'surface',
           heading: 'Set Up a Consultation to Get Spouse Back in London',
           text: 'Do not let ego or misinterpretation ruin your connection. Using husband and wife problem solutions in London, Master Alex assists couples in overcoming emotional blocks and restoring love through efficient spiritual healing. His sessions are private, sensitive, and adapted to your needs. Today, make a good move to get your spouse back in London and reclaim the joy you used to have. Contact Master Alex to arrange a meeting or discover more through a reliable psychic reading that may expose the true path to recovery for your relationship.',
           cta: 'call',
           image: true,
           reverse: true,
+        },
+        {
+          bg: 'dark',
+          form: true,
+          heading: 'Contact Us Now',
         },
       ]}
     />

@@ -118,42 +118,35 @@ export default function About() {
         </div>
       </section>
 
-      {/* How he helps + contact form */}
+      {/* How he helps */}
       <section className="py-16 px-4 bg-master-surface">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-5">
-            <SectionHeading
-              label="Our Approach"
-              title="How Master Alex Assists Individuals"
-              center={false}
-            />
-            <p className="text-master-muted leading-relaxed">
-              Many clients turn to Master Alex for direction when they feel lost, overwhelmed, or trapped by
-              negative energy. When you share your problems, he listens carefully, notes every important detail,
-              analyses the position of stars based on your horoscope, and then offers powerful spiritual answers
-              to resolve your issues.
-            </p>
-            <p className="text-master-muted leading-relaxed">
-              He also removes negative energy from your life that caused these problems in the first place, so you
-              remain pure and filled with positive energy. A better understanding of your life path comes from
-              exploring his psychic reading services. He also provides remote sessions for people unable to visit
-              in person.
-            </p>
-            <Link
-              to="/psychic-reading"
-              className="inline-flex items-center gap-2 text-master-gold font-semibold hover:gap-3 transition-all"
-            >
-              Explore Psychic Reading Services
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-bold text-master-purple mb-6">Contact Us Now</h3>
-            <ContactForm />
-          </div>
+        <div className="max-w-3xl mx-auto space-y-5">
+          <SectionHeading
+            label="Our Approach"
+            title="How Master Alex Assists Individuals"
+            center={false}
+          />
+          <p className="text-master-muted leading-relaxed">
+            Many clients turn to Master Alex for direction when they feel lost, overwhelmed, or trapped by
+            negative energy. When you share your problems, he listens carefully, notes every important detail,
+            analyses the position of stars based on your horoscope, and then offers powerful spiritual answers
+            to resolve your issues.
+          </p>
+          <p className="text-master-muted leading-relaxed">
+            He also removes negative energy from your life that caused these problems in the first place, so you
+            remain pure and filled with positive energy. A better understanding of your life path comes from
+            exploring his psychic reading services. He also provides remote sessions for people unable to visit
+            in person.
+          </p>
+          <Link
+            to="/psychic-reading"
+            className="inline-flex items-center gap-2 text-master-gold font-semibold hover:gap-3 transition-all"
+          >
+            Explore Psychic Reading Services
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
         </div>
       </section>
 
@@ -197,6 +190,14 @@ export default function About() {
           <ContactCard title="Business Address">
             <p>{SITE.address}</p>
           </ContactCard>
+        </div>
+      </section>
+
+      {/* Contact Us */}
+      <section className="py-16 px-4 bg-master-surface">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl font-bold text-master-purple mb-6">Contact Us Now</h2>
+          <ContactForm />
         </div>
       </section>
     </Layout>
