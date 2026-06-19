@@ -6,7 +6,13 @@ import logo from '../../assets/slider/logo-removebg.png'
 export default function Header({ overlay = false }) {
   const [scrolled, setScrolled] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+
+  const closeMobileMenu = () => {
+    setMobileOpen(false)
+    setMobileServicesOpen(false)
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -110,18 +116,64 @@ export default function Header({ overlay = false }) {
 
       {mobileOpen && (
         <div className="lg:hidden header-gradient border-t border-white/10 px-4 py-4 space-y-1">
-          {[...NAV_LINKS, { label: 'Services', path: '/services' }, { label: 'Book Appointment', path: '/book-appointment' }].map(
-            (link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="block text-white/90 py-3 px-3 rounded-lg hover:bg-white/5 font-medium"
-                onClick={() => setMobileOpen(false)}
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className="block text-white/90 py-3 px-3 rounded-lg hover:bg-white/5 font-medium"
+              onClick={closeMobileMenu}
+            >
+              {link.label}
+            </Link>
+          ))}
+
+          <div>
+            <button
+              type="button"
+              className="w-full flex items-center justify-between text-white/90 py-3 px-3 rounded-lg hover:bg-white/5 font-medium"
+              onClick={() => setMobileServicesOpen((open) => !open)}
+              aria-expanded={mobileServicesOpen}
+            >
+              Services
+              <svg
+                className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                {link.label}
-              </Link>
-            ),
-          )}
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {mobileServicesOpen && (
+              <div className="mt-1 ml-3 pl-3 border-l border-white/10 space-y-1">
+                <Link
+                  to="/services"
+                  className="block text-master-gold py-2.5 px-3 rounded-lg hover:bg-white/5 text-sm font-semibold"
+                  onClick={closeMobileMenu}
+                >
+                  View All Services
+                </Link>
+                {SERVICE_LINKS.map((service) => (
+                  <Link
+                    key={service.path}
+                    to={service.path}
+                    className="block text-white/75 py-2.5 px-3 rounded-lg hover:bg-white/5 hover:text-white text-sm"
+                    onClick={closeMobileMenu}
+                  >
+                    {service.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link
+            to="/book-appointment"
+            className="block text-white/90 py-3 px-3 rounded-lg hover:bg-white/5 font-medium"
+            onClick={closeMobileMenu}
+          >
+            Book Appointment
+          </Link>
         </div>
       )}
     </header>

@@ -8,53 +8,53 @@ export default function NegativeEnergyRemoval() {
       showForm={false}
       intro={[
         {
-          heading: 'Strong Negative Energy Removal in London by Master Alex',
-          text: 'When you are surrounded by negative energy, nothing goes right. No matter how hard you work, everything ends in vain, and success seems not reachable. The fault is not in you — it is in the negative energy. Once you remove it, success comes to you. Your efforts are seen and you become unstoppable. You will start living a happy and healthy life as soon as the negative energy is removed from you. The best negative energy removal in London is provided by Master Alex. Be sure to book an appointment now.',
+          heading: 'Powerful Negative Energy Removal in London by Master Alex',
+          text: 'Living under the weight of negative energy can make every step feel harder. You may work tirelessly yet see little return, as if success stays just beyond reach. Often it is not a lack of effort, but dark energy standing in your way. When that energy is removed, doors begin to open, your hard work is acknowledged, and life starts flowing in a healthier direction. Master Alex delivers dependable negative energy removal in London to help you find balance, peace, and renewed wellbeing. Schedule your appointment today.',
         },
         {
-          heading: 'Reclaim Positivity with Negative Energy Removal in London',
-          text: 'Do you usually feel exhausted, unlucky, or encircled by negative energy? These might point to bad energy nearby. To help clean your aura, bring back harmony into your life, and restore peace, Master Alex provides efficient negative energy removal in London. With his strong spiritual direction, you may overcome bad influences and begin attracting positive energy once again.',
+          heading: 'Restore Positivity Through Negative Energy Removal in London',
+          text: 'Are constant fatigue, bad luck, or a heavy sense of negativity part of your daily life? These could be warning signs of harmful energy around you. Master Alex offers focused negative energy removal in London to purify your aura, rebuild inner harmony, and return a sense of calm to your routine. Through his spiritual support, you can break free from negative forces and open yourself to brighter, positive energy once more.',
         },
       ]}
       sections={[
         {
           bg: 'dark',
-          heading: 'London Signs Pointing to Bad Energy Removal in London',
-          text: 'Negative energy has the power to quietly influence your job, relationship, personal life, family, friends, and more. The problem is that all these happen without your knowledge. You will get to know you lost it only when you have completely lost it. Here are some of the most obvious indicators that you might need bad energy removal in London:',
+          heading: 'Warning Signs That Call for Bad Energy Removal in London',
+          text: 'Harmful energy can slowly disrupt your work, love life, home environment, friendships, and overall health, often without you noticing at first. Many people only recognize the problem after significant damage has already been done. Watch for these common signals that bad energy removal in London may be needed:',
           list: [
-            'Regular melancholy or abrupt mood swings',
-            'Without cause, feeling weary or strained',
-            'Recurring failures or misfortune',
-            'Tension in families or relationships; fighting among family members',
+            'Persistent low mood or unexpected emotional shifts',
+            'Constant tiredness or stress with no clear cause',
+            'A string of failures or continuous misfortune',
+            'Family disputes or ongoing tension with loved ones',
           ],
           afterText:
-            'Should these issues be recognizable, it is time to purify your environment. To recover your spiritual and emotional equilibrium, you may also investigate energy healing sessions with Master Alex.',
-          cta: 'whatsapp',
+            'If any of these resonate with you, consider cleansing your space and energy field. Master Alex also offers energy healing sessions to help restore spiritual strength and emotional stability.',
+          cta: 'call',
         },
         {
           bg: 'white',
-          heading: 'Process Involved in Dark Energy Removal by Master Alex',
-          text: 'Master Alex, a spiritual healer, performs dark energy removal by means of a combination of prayers, astrology, and energy balancing. His methods work well for families and people alike — they are safe and conventional. Your London sessions let you release unwanted energy impeding your achievement and serenity. He also leads customers through spiritual cleansing ceremonies to keep negativity out and sustain lifelong optimism in life.',
+          heading: 'Master Alex\'s Approach to Dark Energy Removal',
+          text: 'Master Alex is a skilled spiritual healer who combines prayer, astrological insight, and energy balancing to remove dark energy. His techniques are time-tested, safe, and suitable for individuals as well as families. In his London sessions, he helps clients shed the unwanted energy that limits growth and disturbs inner calm. He further supports them with spiritual cleansing rituals to block future negativity and nurture long-term positivity.',
           cta: 'call',
         },
         {
           bg: 'surface',
-          heading: 'Negative Energy Cleansing in London',
-          text: 'Visible changes in your surroundings and moods will follow when you undergo a session on negative energy cleansing in London under Master Alex. Here is what you could expect:',
+          heading: 'What to Expect from Negative Energy Cleansing in London',
+          text: 'Clients who undergo negative energy cleansing with Master Alex in London often report meaningful improvements in how they feel and how their environment responds. Benefits commonly include:',
           list: [
-            'Calm and relaxed mental state',
-            'Enhanced relationships and interaction',
-            'More powerful spiritual guard',
-            'Enhanced concentration and constructive thinking',
+            'Greater mental peace and emotional ease',
+            'Healthier bonds and smoother communication',
+            'Stronger protection on a spiritual level',
+            'Better focus and a more optimistic outlook',
           ],
           afterText:
-            'These good things happen when clean energy surrounds you. This attracts fresh possibilities and joy into your life.',
-          cta: 'whatsapp',
+            'With positive energy restored around you, it becomes easier to welcome new chances, happiness, and contentment into your life.',
+          cta: 'call',
         },
         {
           bg: 'dark',
-          heading: 'Schedule a Consultation to Get Rid of Negative Energy',
-          text: 'Do not let invisible influences compromise your peace and development. With strong spiritual healing, Master Alex — the go-to authority for negative energy removal in London — can assist you in regaining command over your life. Personalized to your circumstances, his therapies guarantee long-lasting results and future negativity protection. For efficient bad energy removal in London, contact Master Alex right away and experience the positive change you deserve. Book a consultation right away to start on the road to peace, balance, and joy.',
+          heading: 'Schedule Your Session to Clear Negative Energy',
+          text: 'Don\'t let unseen negative forces limit your happiness or progress. Master Alex is a trusted specialist in negative energy removal in London, offering spiritual healing to help you take back control. Every remedy is customized to your needs, aiming for deep relief and ongoing protection against future harm. Reach out to Master Alex today for proven bad energy removal in London and start moving toward peace, balance, and happiness.',
           cta: 'call',
           image: true,
           reverse: true,

@@ -47,7 +47,7 @@ export default function TermsConditions() {
           <div className="space-y-4">
             <h2 className="text-xl font-bold text-master-purple">Intellectual Property</h2>
             <p className="text-master-muted leading-relaxed">
-              All content on this website — including text, graphics, logos, images, videos, and design — is the
+              All content on this website, including text, graphics, logos, images, videos, and design, is the
               intellectual property of {SITE.name} and is protected by applicable copyright and intellectual property
               laws. Unauthorized use, copying, or reproduction of any material is strictly prohibited.
             </p>

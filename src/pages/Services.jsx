@@ -31,7 +31,7 @@ export default function Services() {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-auto block object-contain"
+                  className="w-full h-auto block"
                 />
                 <div className="p-4 flex flex-col flex-1">
                   <h3 className="text-lg font-bold text-master-purple mb-2">{service.title}</h3>

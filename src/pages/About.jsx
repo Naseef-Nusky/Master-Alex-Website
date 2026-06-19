@@ -5,7 +5,7 @@ import ContactForm from '../components/common/ContactForm'
 import SectionHeading from '../components/common/SectionHeading'
 import ServiceImageSlider from '../components/common/ServiceImageSlider'
 import GetExLovePromo from '../components/common/GetExLovePromo'
-import { WhatsAppButton } from '../components/common/Buttons'
+import { CallButton } from '../components/common/Buttons'
 import { SITE, ABOUT_EXPERTISE, ABOUT_SPECIALIZATIONS } from '../constants/siteData'
 import { BANNER_IMAGES } from '../constants/bannerImages'
 
@@ -23,7 +23,7 @@ export default function About() {
     <Layout>
       <PageBanner
         title="About Us"
-        subtitle="Learn about Master Alex — London's trusted spiritual guide."
+        subtitle="Learn about Master Alex, London's trusted spiritual guide."
         image={BANNER_IMAGES['/about']}
       />
 
@@ -32,17 +32,18 @@ export default function About() {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-3 space-y-5">
             <h2 className="text-2xl font-bold text-master-purple">
-              Master Alex, Your Reliable London-Based Astrologer
+              Master Alex, Your Trusted Astrologer in London
             </h2>
             <p className="text-master-muted leading-relaxed">
-              Among the other astrologers in London, Master Alex is one of the most dependable and experienced.
-              With over 25 years of astrological experience, his personalized readings are highly accurate and guide
-              you toward a better future. Coming from a family of astrologers, he has been taught ancient,
-              time-tested practices to help you rediscover direction, serenity, and clarity in life.
+              In a city filled with astrologers, Master Alex stands out as one of London&apos;s most reliable and
+              seasoned practitioners. With more than 25 years of experience, his tailored readings are known for
+              their accuracy and for guiding clients toward a brighter future. Raised in a family devoted to
+              astrology, he carries forward ancient, proven methods that help you regain purpose, inner calm, and
+              clear direction in life.
             </p>
             <p className="text-master-muted leading-relaxed">
-              Do you want someone trustable to show you the path towards success? You are in the right place.
-              Call Master Alex today.
+              Looking for someone you can trust to guide you toward success? You have come to the right place.
+              Contact Master Alex today.
             </p>
           </div>
 
@@ -88,7 +89,7 @@ export default function About() {
           <SectionHeading
             label="Services"
             title="Specializations and Services Offered"
-            description="For problems in both personal and professional life, Master Alex provides individualized astrological readings for better and efficient solutions. His answers aim to eliminate bad influences and restore balance — whether in love, family, or career."
+            description="For problems in both personal and professional life, Master Alex provides individualized astrological readings for better and efficient solutions. His answers aim to eliminate bad influences and restore balance in love, family, and career."
           />
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mt-4">
@@ -154,7 +155,7 @@ export default function About() {
       <section className="py-16 px-4 mesh-hero">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Speak with Master Alex | Bring Warmth into Your Life
+            Speak with Master Alex and Bring Warmth into Your Life
           </h2>
           <p className="text-white/70 leading-relaxed mb-8">
             Book your appointment with Master Alex today if you are looking for an astrologer who truly cares about
@@ -169,7 +170,7 @@ export default function About() {
             >
               Book An Appointment
             </Link>
-            <WhatsAppButton />
+            <CallButton variant="primary" />
           </div>
         </div>
       </section>
@@ -177,7 +178,7 @@ export default function About() {
       {/* Contact info cards */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-5">
-          <ContactCard title="Phone / WhatsApp">
+          <ContactCard title="Phone">
             <a href={SITE.phoneLink} className="text-master-gold hover:underline">
               {SITE.phone}
             </a>

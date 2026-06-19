@@ -1,5 +1,5 @@
 import getExLoveImg from '../../assets/get-ex-love.png'
-import { CallButton, WhatsAppButton } from './Buttons'
+import { CallButton } from './Buttons'
 
 export default function GetExLovePromo({ className = '' }) {
   return (
@@ -27,7 +27,6 @@ export default function GetExLovePromo({ className = '' }) {
 
       <div className="space-y-2">
         <CallButton variant="dark" className="w-full" compact />
-        <WhatsAppButton className="w-full" compact />
       </div>
     </div>
   )

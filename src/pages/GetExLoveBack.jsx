@@ -10,51 +10,51 @@ export default function GetExLoveBack() {
       sidebar={<GetExLovePromo />}
       intro={[
         {
-          heading: 'Find True Love Once More with the Love Back Expert in London',
-          text: 'By mistake, did you let go of your first love? Are you longing to reunite with your love again? One phone call to Master Alex, the most trusted love back expert in London, can help you find your true love once more and reunite you both. Book your appointment today.',
+          heading: 'Reconnect with True Love Through London\'s Love Back Expert',
+          text: 'Did you walk away from someone special too soon? Are you hoping to rebuild the bond you once shared? A single conversation with Master Alex, one of London\'s most trusted love back experts, can help you rediscover genuine love and bring you back together. Book your appointment today.',
         },
         {
-          heading: 'Strong Direction from The Love Back Specialist in London',
-          text: 'Is the distance or heartbreak in your relationship troubling you? Master Alex, the renowned love back specialist in London, can assist you in reviving forgotten love and reconnecting emotionally. He guides you toward a happy reunion through in-depth expertise in astrology and horoscope reading, which helps you grasp the genuine cause of your relationship problems and find lasting solutions.',
+          heading: 'Clear Guidance from a Leading Love Back Specialist in London',
+          text: 'Is distance or heartbreak weighing on your relationship? Master Alex, a well-known love back specialist in London, can help revive fading affection and restore emotional closeness. Through skilled astrology and horoscope analysis, he uncovers the real reasons behind your relationship struggles and offers lasting paths to reconciliation.',
         },
       ]}
       sections={[
         {
           bg: 'dark',
-          heading: 'Trusted Love Problem Solution in London',
-          text: 'Though every couple runs into problems, correct direction helps to reconcile them peacefully. Master Alex\'s effective sessions on love problem solution in London provide easy but strong astrological cures for trust concerns, misunderstanding, or family interference. His appointments are private, empathetic, and focused on long-term happiness. He helps couples going through arguments as well — discover more about how to solve husband and wife problems to restore harmony in your marriage.',
-          cta: 'whatsapp',
+          heading: 'Reliable Love Problem Solutions in London',
+          text: 'Every relationship faces challenges, but the right guidance can help partners resolve them with understanding. Master Alex offers effective love problem solution sessions in London with simple yet powerful astrological remedies for trust issues, misunderstandings, and family pressure. His consultations are confidential, compassionate, and focused on long-term happiness. He also supports couples facing ongoing conflicts. You can also learn more about resolving husband and wife problems to bring harmony back to your marriage.',
+          cta: 'call',
         },
         {
           bg: 'surface',
-          heading: 'Effective Solutions for Lost Love Back Issues',
-          text: 'Losing someone you love could make you feel helpless. But astrology can illuminate your life. Master Alex assists couples in rekindling forgotten emotions and clearing up misunderstandings through lost love back treatments. Here is how astrology assists with love issues:',
+          heading: 'Proven Help for Lost Love Back Concerns',
+          text: 'Losing someone dear can leave you feeling powerless. Astrology, however, can shine light on your path forward. Master Alex helps couples rebuild forgotten feelings and clear misunderstandings through lost love back treatments. Here is how astrology supports healing in love:',
           list: [
-            'Finds the astrological causes of separation',
-            'Proposes cures for quicker reconciliation',
-            'Balances sentiments and strengthens mutual understanding',
+            'Identifies the astrological reasons behind separation',
+            'Recommends remedies for faster reconciliation',
+            'Restores emotional balance and deepens mutual understanding',
           ],
           afterText:
-            'You can also attend sessions on negative energy removal to clear emotional barriers if negativity is starting to impact your relationship.',
+            'If negativity is affecting your bond, you can also benefit from negative energy removal sessions to clear emotional blockages.',
           cta: 'call',
         },
         {
           bg: 'white',
-          heading: 'Fast and Effective Methods to Get Ex Back',
-          text: 'Astrology offers tried-and-true strategies to assist if you are wondering how to get your ex back and revive your relationship. To enhance emotional attachment and bring your partner back into your life, Master Alex employs horoscope matching, love spells, and planetary assessment. Advantages of his sessions include:',
+          heading: 'Quick and Proven Ways to Get Your Ex Back',
+          text: 'If you are searching for how to get your ex back and rebuild your relationship, astrology offers trusted methods that work. Master Alex uses horoscope matching, love spells, and planetary analysis to strengthen emotional connection and help bring your partner back into your life. Benefits of his sessions include:',
           list: [
-            'Increases empathy and love',
-            'Provides emotional tranquillity',
-            'Enhances compatibility',
+            'Deepens love and empathy between partners',
+            'Brings emotional peace and stability',
+            'Improves overall compatibility',
           ],
           afterText:
-            'You might also look into guidance from a love spell caster for quicker results to improve marriage healing.',
-          cta: 'whatsapp',
+            'For additional support, you may also seek guidance from a trusted love spell caster to accelerate healing in your relationship or marriage.',
+          cta: 'call',
         },
         {
           bg: 'dark',
-          heading: 'Speak with the Love Back Specialist in London Now',
-          text: 'Whether you are experiencing heartache, divorce, or communication problems with your love partner, Master Alex, the love back specialist in London, can bring positive effects to your love life. For their efficiency and precision, many Londoners rely on his methods based on astrology. Arrange a session right now and let the love back specialist in London guide you towards reunification with your loved one. Under Master Alex\'s direction, start towards emotional serenity and happiness today — do not wait.',
+          heading: 'Talk to London\'s Love Back Specialist Today',
+          text: 'If you are dealing with heartbreak, separation, or communication breakdowns, Master Alex, London\'s experienced love back specialist, can bring positive change to your love life. Many clients across London trust his astrological methods for their accuracy and results. Book a session today and let him guide you toward reuniting with the person you love. With Master Alex\'s support, you can start moving toward emotional peace and happiness again.',
           cta: 'call',
           image: true,
           reverse: true,

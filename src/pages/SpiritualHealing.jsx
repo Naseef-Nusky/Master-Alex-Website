@@ -8,43 +8,43 @@ export default function SpiritualHealing() {
       showForm={false}
       intro={[
         {
-          heading: 'Restore Peace and Balance with Energy Healing and Spiritual Cleansing in London',
-          text: 'Without knowing the proper reason, are you confused, weary, or exhausted about the things happening in your life? If you are being pessimistic, it changes a great deal in how things happen in today’s hectic world. And that is why it is important to always surround yourself with positive energy, which is made possible by the well-known spiritual healer in London, Master Alex. He helps the people of London overcome emotional struggles, set their mind straight on their goals, and find happiness despite the dark times, through spiritual healing and energy cleansing. Master Alex’s powerful spiritual healing methods are designed to restore your inherent energy flow, restore peace, strength, and balance in your life. Find inner calm with a trusted spiritual healer in London today. Book your appointment right away and find inner peace again.',
+          heading: 'Find Peace and Balance Through Energy Healing and Spiritual Cleansing in London',
+          text: 'Do you feel confused, drained, or overwhelmed by events in your life without knowing why? A negative mindset can deeply affect how life unfolds in today\'s fast-paced world. That\'s why surrounding yourself with positive energy matters, and Master Alex, a trusted spiritual healer in London, can help. Through spiritual healing and energy cleansing, he helps people across London overcome emotional pain, refocus on their goals, and find happiness even during difficult times. His healing methods restore natural energy flow, bringing back peace, strength, and balance. Book your appointment today and find inner peace again.',
         },
         {
-          heading: 'What is Spiritual Healing?',
-          text: 'Spiritual healing is a spiritual process undertaken by Master Alex to help your body, mind, and spirit cooperate peacefully. This in turn removes negative energy. Having years of experience as a spiritual healer in London, Master Alex employs age-old energy techniques and prayers to unload emotional baggage and enable the development of good energy. Explore more about Master Alex to find more information on his upbringing and astrological knowledge.',
+          heading: 'Understanding Spiritual Healing',
+          text: 'Spiritual healing is a process led by Master Alex to bring your body, mind, and spirit into harmony and clear negative energy. With years of experience as a spiritual healer in London, he uses traditional energy practices and prayers to release emotional burdens and nurture positive growth. Learn more about Master Alex to discover his background and astrological expertise.',
         },
       ]}
       sections={[
         {
           bg: 'dark',
-          heading: 'How Energy Healing Works?',
-          text: 'During an energy healing process, Master Alex transmits positive vibrations across your body. This process gets rid of all the energy blockages. The result? You feel lighter, more relaxed, and more focused towards your goals. Master Alex believes that your relationships, job, and health will also get better when your energy is balanced. The typical advantages are:',
+          heading: 'How Does Energy Healing Work?',
+          text: 'During energy healing, Master Alex channels positive vibrations throughout your body to clear blockages that hold you back. The result is a lighter, calmer, and more focused state of mind. He believes that when your energy is balanced, improvements can follow in relationships, career, and overall health. Common benefits include:',
           list: [
-            'Stress and worry alleviation',
-            'Better emotional stability and sleeping habits',
-            'Improved internal confidence and concentration',
-            'A closer spiritual bond',
+            'Reduced stress and anxiety',
+            'Greater emotional stability and better sleep',
+            'Stronger self-confidence and mental clarity',
+            'A deeper spiritual connection',
           ],
         },
         {
           bg: 'surface',
-          heading: 'Why opt for an Energy Healer in London?',
-          text: 'Experienced energy healer in London Master Alex provides in-person and remote healing treatments. His method fits modern life by blending deep spiritual understanding with venerable customs. His healing renews your inner strength and cleans your energy field whether you are suffering emotional agony, relationship problems, or mental strain. You may also look into negative energy removal solutions for more thorough spiritual cleansing if you sometimes find yourself surrounded by bad or unrelenting exhaustion.',
-          cta: 'whatsapp',
+          heading: 'Why Choose an Energy Healer in London?',
+          text: 'Master Alex is an experienced energy healer in London offering both in-person and remote sessions. His approach combines timeless spiritual wisdom with practical support for modern life. If you face emotional pain, relationship strain, or mental exhaustion, his healing restores inner strength and purifies your energy field. If you often feel surrounded by negativity or persistent fatigue, you may also benefit from his negative energy removal services for deeper spiritual cleansing.',
+          cta: 'call',
         },
         {
           bg: 'white',
-          heading: 'Discover the Might of Spiritual Purification',
-          text: 'Spiritual cleansing is quite different from spiritual healing. Spiritual cleansing gets rid of all the unfavourable vibes from your aura, your home, your personal space, and even your office. This process is done so that you are always surrounded with good energy. Personalized to fit the spiritual needs of every individual, Master Alex’s healing treatments guarantee long-lasting results and emotional balance.',
+          heading: 'Experience the Power of Spiritual Cleansing',
+          text: 'Spiritual cleansing is different from spiritual healing. It focuses on removing harmful vibrations from your aura, home, personal space, and even your workplace so you stay surrounded by positive energy. Master Alex tailors each cleansing session to your spiritual needs for lasting results and emotional balance.',
           cta: 'call',
         },
         {
           bg: 'surface',
-          heading: 'Book Energy Healing and Spiritual Cleansing Consultations Today!',
-          text: 'If you book your consultation with Master Alex, you will stop feeling emotionally burdened. This lets you feel more positive again, fills your life with happy and peaceful moments, and you are likely to achieve more success than before. Begin your path towards a more upbeat life by booking your energy healing and spiritual cleansing consultations today.',
-          cta: 'whatsapp',
+          heading: 'Book Your Energy Healing and Spiritual Cleansing Session Today',
+          text: 'A consultation with Master Alex can help lift the emotional weight you have been carrying. Many clients feel more positive, experience greater peace in daily life, and move closer to the success they want. Book your energy healing and spiritual cleansing session today.',
+          cta: 'call',
           image: true,
           reverse: true,
         },

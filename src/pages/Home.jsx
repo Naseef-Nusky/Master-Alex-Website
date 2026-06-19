@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../components/layout/Layout'
 import HeroSlider from '../components/common/HeroSlider'
@@ -11,6 +12,7 @@ import {
   ABOUT_HOME,
   WHY_CHOOSE,
   WHY_CHOOSE_INTRO,
+  WHY_CHOOSE_TITLE,
   FAQS,
 } from '../constants/siteData'
 import homeAbout from '../assets/home-about.png'
@@ -49,7 +51,7 @@ function ServiceCard({ service, index }) {
       <img
         src={service.image}
         alt={service.title}
-        className="w-full h-auto block object-contain"
+        className="w-full h-auto block"
       />
       <div className="p-4 flex flex-col flex-1">
         <h3 className="text-lg font-bold text-master-purple mb-2">{service.title}</h3>
@@ -77,6 +79,8 @@ function ServiceCard({ service, index }) {
 }
 
 export default function Home() {
+  const [openFaq, setOpenFaq] = useState(0)
+
   return (
     <Layout heroBehindHeader>
       <HeroSlider />
@@ -106,22 +110,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Tagline */}
-      <section className="py-12 px-4 bg-master-surface border-y border-gray-100">
-        <div className="max-w-3xl mx-auto text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-master-gold mb-3 block">
-            Best Solutions
-          </span>
-          <h2 className="text-2xl md:text-3xl font-bold text-master-purple">
-            Premier Solutions for Every Challenge
-          </h2>
-        </div>
-      </section>
-
       {/* About */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="relative">
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-7xl mx-auto flex flex-col gap-6 lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center">
+          {/* Mobile: title first */}
+          <div className="order-1 lg:hidden">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-master-gold mb-2 block">
+              About Us
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-master-purple">
+              {ABOUT_HOME.title}
+            </h2>
+          </div>
+
+          <div className="relative order-2 lg:order-1">
             <div className="absolute -inset-3 bg-gradient-to-br from-master-gold/20 to-purple-500/10 rounded-3xl" />
             <img
               src={homeAbout}
@@ -130,19 +132,22 @@ export default function Home() {
             />
           </div>
 
-          <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-master-gold mb-3 block">
-              About Us
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-master-purple mb-6">
-              {ABOUT_HOME.title}
-            </h2>
-            <div className="space-y-5 text-master-muted leading-relaxed">
+          {/* Desktop: title + text grouped; mobile: text only (title above image) */}
+          <div className="order-3 lg:order-2 flex flex-col gap-4">
+            <div className="hidden lg:block">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-master-gold mb-2 block">
+                About Us
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-master-purple">
+                {ABOUT_HOME.title}
+              </h2>
+            </div>
+            <div className="space-y-4 text-master-muted leading-relaxed">
               {ABOUT_HOME.paragraphs.map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}
             </div>
-            <div className="mt-8">
+            <div>
               <Link
                 to="/about"
                 className="inline-flex items-center gap-2 text-master-gold font-semibold hover:gap-3 transition-all"
@@ -162,8 +167,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             label="Our Top Services"
-            title="Premier Solutions for Every Challenge"
-            description="Personalized spiritual services tailored to your unique situation."
+            title="Expert Spiritual Services"
+            description="Personalized spiritual services for your unique situation."
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {HOME_SERVICES.map((s, i) => {
@@ -205,7 +210,7 @@ export default function Home() {
                 Why Choose Us
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-master-purple leading-tight mb-5">
-                Why Master Alex is So Popular in London
+                {WHY_CHOOSE_TITLE}
               </h2>
               <p className="text-master-muted leading-relaxed text-lg mb-8">
                 {WHY_CHOOSE_INTRO}
@@ -262,20 +267,35 @@ export default function Home() {
             description="Find answers to the most common questions about our services, guidance, and consultations."
           />
           <div className="space-y-3">
-            {FAQS.map((faq, i) => (
-              <details
+            {FAQS.map((faq, i) => {
+              const isOpen = openFaq === i
+              return (
+              <div
                 key={faq.q}
-                className="group bg-master-surface rounded-xl border border-gray-100 overflow-hidden"
+                className="bg-master-surface rounded-xl border border-gray-100 overflow-hidden"
               >
-                <summary className="px-6 py-4 font-semibold text-master-purple cursor-pointer list-none flex justify-between items-center hover:bg-white transition-colors">
+                <button
+                  type="button"
+                  onClick={() => setOpenFaq(i)}
+                  aria-expanded={isOpen}
+                  className="w-full px-6 py-4 font-semibold text-master-purple cursor-pointer flex justify-between items-center hover:bg-white transition-colors text-left"
+                >
                   Q{i + 1} {faq.q}
-                  <svg className="w-5 h-5 text-master-muted group-open:rotate-180 transition-transform shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className={`w-5 h-5 text-master-muted transition-transform shrink-0 ml-4 ${isOpen ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
-                </summary>
-                <p className="px-6 pb-4 text-master-muted text-sm leading-relaxed">{faq.a}</p>
-              </details>
-            ))}
+                </button>
+                {isOpen && (
+                  <p className="px-6 pb-4 text-master-muted text-sm leading-relaxed">{faq.a}</p>
+                )}
+              </div>
+              )
+            })}
           </div>
         </div>
       </section>

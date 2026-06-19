@@ -1,4 +1,4 @@
-import { CallButton, WhatsAppButton } from './Buttons'
+import { CallButton } from './Buttons'
 
 export default function ServiceSectionBlock({ section, isDark = false }) {
   const headingClass = isDark ? 'text-white' : 'text-master-purple'
@@ -45,10 +45,7 @@ export default function ServiceSectionBlock({ section, isDark = false }) {
 
       {section.cta && (
         <div className="flex flex-col items-center gap-3 pt-1 sm:flex-row sm:flex-wrap sm:justify-center lg:pt-2">
-          {section.cta === 'whatsapp' && (
-            <WhatsAppButton className="w-full sm:w-auto lg:min-w-[220px]" />
-          )}
-          {section.cta === 'call' && (
+          {(section.cta === 'call' || section.cta === 'whatsapp') && (
             <CallButton
               variant={isDark ? 'primary' : 'dark'}
               className="w-full sm:w-auto lg:min-w-[220px]"

@@ -4,7 +4,7 @@ import ContactForm from './ContactForm'
 import ContactFormWithSlider from './ContactFormWithSlider'
 import SectionHeading from './SectionHeading'
 import ServiceSectionBlock from './ServiceSectionBlock'
-import { CallButton, WhatsAppButton } from './Buttons'
+import { CallButton } from './Buttons'
 import { SITE } from '../../constants/siteData'
 import { SERVICE_IMAGES } from '../../constants/serviceImages'
 import { BANNER_IMAGES, DEFAULT_BANNER } from '../../constants/bannerImages'
@@ -67,10 +67,7 @@ export default function ServicePageLayout({
                 )}
                 {block.cta && (
                   <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
-                    {block.cta === 'whatsapp' && (
-                      <WhatsAppButton className="w-full sm:w-auto lg:min-w-[220px]" />
-                    )}
-                    {block.cta === 'call' && (
+                    {(block.cta === 'call' || block.cta === 'whatsapp') && (
                       <CallButton variant="dark" className="w-full sm:w-auto lg:min-w-[220px]" />
                     )}
                   </div>
@@ -87,7 +84,6 @@ export default function ServicePageLayout({
                   <p className="text-center text-sm text-master-muted">{SITE.name}</p>
                   <div className="space-y-2">
                     <CallButton variant="dark" className="w-full" compact />
-                    <WhatsAppButton className="w-full" compact />
                   </div>
                 </div>
               )}
@@ -187,7 +183,6 @@ export default function ServicePageLayout({
                 center={false}
               />
               <div className="flex flex-wrap gap-3">
-                <WhatsAppButton />
                 <CallButton variant="dark" />
               </div>
             </div>

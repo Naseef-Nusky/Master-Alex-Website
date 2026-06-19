@@ -48,12 +48,10 @@ export default function Footer() {
             <h3 className="font-semibold text-sm uppercase tracking-wider text-white/40 mb-4">Get in Touch</h3>
             <p className="text-white/50 text-sm mb-4">Available for in-person and remote consultations across the UK.</p>
             <a
-              href={SITE.whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-master-whatsapp text-white text-sm font-medium rounded-xl hover:brightness-110 transition-all"
+              href={SITE.phoneLink}
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-master-gold text-master-dark text-sm font-medium rounded-xl hover:bg-master-gold-light transition-all"
             >
-              Chat on WhatsApp
+              {SITE.phone}
             </a>
           </div>
         </div>
@@ -61,7 +59,7 @@ export default function Footer() {
 
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-white/40 text-xs">
-          <p>© 2025. All rights reserved.</p>
+          <p>© {new Date().getFullYear()}. All rights reserved.</p>
           <div className="flex gap-6">
             <Link to="/privacy-policy" className="hover:text-white/70 transition-colors">
               Privacy Policy
