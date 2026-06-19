@@ -15,7 +15,10 @@ export default function HusbandWifeProblems() {
           heading: 'Restore Peace with Husband and Wife Problem Solutions in London',
           text: 'Every marriage goes through difficult phases, but when constant arguments, mistrust, or misunderstandings take control, the connection between partners can break down. Master Alex provides husband and wife problem solutions in London to help couples rebuild love, trust, and harmony. His spiritual guidance restores emotional balance and clears negativity from your relationship.',
         },
+      ]}
+      sections={[
         {
+          bg: 'dark',
           heading: 'Common Causes of Marital Problems',
           text: 'Many couples struggle without knowing the real source of their issues. Here are some frequent reasons relationships begin to fall apart:',
           list: [
@@ -28,10 +31,8 @@ export default function HusbandWifeProblems() {
             'With the right spiritual support and expert guidance, these problems can be addressed. You may also explore sessions with Master Alex, a trusted love back specialist, to strengthen your bond and bring love and passion back into your marriage.',
           cta: 'call',
         },
-      ]}
-      sections={[
         {
-          bg: 'dark',
+          bg: 'white',
           heading: 'How Astrology Helps You Get Your Husband or Wife Back',
           text: 'Astrology can reveal hidden forces that shape love and marriage. Through birth chart analysis and spiritual remedies, Master Alex aligns planetary influences and removes harmful energies to help you get your husband back or get your wife back. His treatments encourage greater understanding, warmth, and emotional clarity between partners. If conflict has created distance, guidance from a love spell caster can also help restore love and mutual respect.',
           cta: 'call',
