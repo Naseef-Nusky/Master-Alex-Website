@@ -93,11 +93,11 @@ export default function Home() {
             title="All Religions Welcome"
             description="Spiritual guidance rooted in respect for every belief system."
           />
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-3xl mx-auto">
+          <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-4 sm:grid sm:grid-cols-3 lg:grid-cols-5">
             {RELIGIONS.map((r) => (
               <div
                 key={r.name}
-                className="flex h-28 w-full flex-col items-center justify-between rounded-xl border border-gray-100 bg-master-surface p-2 transition-colors hover:border-master-gold/30 sm:h-32"
+                className="flex h-28 w-[calc(50%-0.5rem)] flex-col items-center justify-between rounded-xl border border-gray-100 bg-master-surface p-2 transition-colors hover:border-master-gold/30 sm:h-32 sm:w-full"
               >
                 <div className="flex flex-1 items-center justify-center">
                   <img
