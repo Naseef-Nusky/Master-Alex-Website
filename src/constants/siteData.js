@@ -7,9 +7,9 @@ export const SITE = {
   phoneLink: 'tel:+442012345678',
   whatsappLink: 'https://wa.me/442012345678',
   email: 'info@masteralex.com',
-  address: '123 Spiritual Way, London, UK',
+  address: '123 Spiritual Way, UK',
   mapEmbed:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0!2d-0.1276!3d51.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502ba3977%3A0x6c7c628f42cd7476!2sLondon%2C%20UK!5e0!3m2!1sen!2suk!4v1',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0!2d-0.1276!3d51.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502ba3977%3A0x6c7c628f42cd7476!2sUK!5e0!3m2!1sen!2suk!4v1',
 }
 
 export const NAV_LINKS = [
@@ -118,15 +118,15 @@ export const RELIGIONS = [
 export const ABOUT_HOME = {
   title: 'Know More About Master Alex',
   paragraphs: [
-    'With more than 25 years of practice, Master Alex is one of London\'s most trusted and well-known astrologers. He provides clear, expert guidance to help people move past difficulties in love, marriage, career, and business. Known for his effective remedies, he helps reunite separated partners, settle conflicts, clear negative energy, and shield clients from black magic. Drawing on strong astrological knowledge, he offers reliable, practical advice that supports a calmer, happier, and more balanced life.',
-    'Master Alex is also a respected spiritual guide with a remarkable gift for reading birth charts and foreseeing major life events. From love and marriage troubles to evil spirit removal and black magic concerns, his insight and caring manner have earned the confidence of many clients. Committed to honest, lasting results, he supports people across London in clearing obstacles, regaining stability, and finding peace in their lives.',
+    'With more than 25 years of practice, Master Alex is one of UK\'s most trusted and well-known astrologers. He provides clear, expert guidance to help people move past difficulties in love, marriage, career, and business. Known for his effective remedies, he helps reunite separated partners, settle conflicts, clear negative energy, and shield clients from black magic. Drawing on strong astrological knowledge, he offers reliable, practical advice that supports a calmer, happier, and more balanced life.',
+    'Master Alex is also a respected spiritual guide with a remarkable gift for reading birth charts and foreseeing major life events. From love and marriage troubles to evil spirit removal and black magic concerns, his insight and caring manner have earned the confidence of many clients. Committed to honest, lasting results, he supports people across the UK in clearing obstacles, regaining stability, and finding peace in their lives.',
   ],
 }
 
-export const WHY_CHOOSE_TITLE = 'What Makes Master Alex a Trusted Name in London'
+export const WHY_CHOOSE_TITLE = 'What Makes Master Alex a Trusted Name in the UK'
 
 export const WHY_CHOOSE_INTRO =
-  'Across London, Master Alex has earned a strong reputation through more than 25 years of skilled guidance, precise readings, and practical help with love, career, and spiritual challenges. His warm, caring approach and time-tested remedies have won the confidence of many, which is why he remains a leading astrologer and psychic reader in the city.'
+  'across the UK, Master Alex has earned a strong reputation through more than 25 years of skilled guidance, precise readings, and practical help with love, career, and spiritual challenges. His warm, caring approach and time-tested remedies have won the confidence of many, which is why he remains a leading astrologer and psychic reader in the UK.'
 
 export const WHY_CHOOSE = [
   {
@@ -154,13 +154,13 @@ export const WHY_CHOOSE = [
 export const TESTIMONIALS = [
   {
     name: 'Nova',
-    location: 'London',
-    text: 'I consulted Master Alex in London during a challenging phase in my life, and his guidance was truly transformative. His insights were accurate, and the remedies he suggested brought peace, clarity, and positive changes. I highly recommend Master Alex to anyone seeking genuine spiritual and life solutions.',
+    location: 'UK',
+    text: 'I consulted Master Alex in the UK during a challenging phase in my life, and his guidance was truly transformative. His insights were accurate, and the remedies he suggested brought peace, clarity, and positive changes. I highly recommend Master Alex to anyone seeking genuine spiritual and life solutions.',
   },
   {
     name: 'Maria',
-    location: 'London',
-    text: 'Master Alex\'s spiritual healing and aura cleansing transformed my life! His sessions lifted me out of depression and anxiety, restoring my mental peace and inner strength. I highly recommend his effective healing services in London!',
+    location: 'UK',
+    text: 'Master Alex\'s spiritual healing and aura cleansing transformed my life! His sessions lifted me out of depression and anxiety, restoring my mental peace and inner strength. I highly recommend his effective healing services in the UK!',
   },
 ]
 

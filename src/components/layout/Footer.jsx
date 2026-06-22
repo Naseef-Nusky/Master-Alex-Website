@@ -12,7 +12,7 @@ export default function Footer() {
               <img src={logo} alt={SITE.name} className="w-24 h-24 sm:w-28 sm:h-28 object-contain" />
             </Link>
             <p className="text-white/50 text-sm sm:text-base leading-relaxed">
-              Trusted spiritual guidance and astrology services in London. Helping you find clarity, peace, and positive change.
+              Trusted spiritual guidance and astrology services in the UK. Helping you find clarity, peace, and positive change.
             </p>
           </div>
 

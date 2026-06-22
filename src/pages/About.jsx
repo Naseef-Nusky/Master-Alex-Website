@@ -23,7 +23,7 @@ export default function About() {
     <Layout>
       <PageBanner
         title="About Us"
-        subtitle="Learn about Master Alex, London's trusted spiritual guide."
+        subtitle="Learn about Master Alex, UK's trusted spiritual guide."
         image={BANNER_IMAGES['/about']}
       />
 
@@ -32,10 +32,10 @@ export default function About() {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-3 space-y-5">
             <h2 className="text-2xl font-bold text-master-purple">
-              Master Alex, Your Trusted Astrologer in London
+              Master Alex, Your Trusted Astrologer in the UK
             </h2>
             <p className="text-master-muted leading-relaxed">
-              In a city filled with astrologers, Master Alex stands out as one of London&apos;s most reliable and
+              Across the UK, Master Alex stands out as one of UK&apos;s most reliable and
               seasoned practitioners. With more than 25 years of experience, his tailored readings are known for
               their accuracy and for guiding clients toward a brighter future. Raised in a family devoted to
               astrology, he carries forward ancient, proven methods that help you regain purpose, inner calm, and
@@ -159,7 +159,7 @@ export default function About() {
           </h2>
           <p className="text-white/70 leading-relaxed mb-8">
             Book your appointment with Master Alex today if you are looking for an astrologer who truly cares about
-            your well-being and happiness. With his extensive knowledge and years of experience in London, he is the
+            your well-being and happiness. With his extensive knowledge and years of experience in the UK, he is the
             perfect mentor to lead you toward success, positivity, and calm. Contact right now to begin a more
             fulfilling life.
           </p>
