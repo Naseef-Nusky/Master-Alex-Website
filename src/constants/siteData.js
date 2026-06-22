@@ -112,6 +112,7 @@ export const RELIGIONS = [
   { name: 'Buddhism', image: RELIGION_IMAGES.Buddhism },
   { name: 'Islam', image: RELIGION_IMAGES.Islam },
   { name: 'Christianity', image: RELIGION_IMAGES.Christianity },
+  { name: 'Judaism', image: RELIGION_IMAGES.Judaism },
 ]
 
 export const ABOUT_HOME = {
