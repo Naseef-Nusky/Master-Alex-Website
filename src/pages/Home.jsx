@@ -315,7 +315,7 @@ export default function Home() {
             />
           </div>
           <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-            <ContactForm buttonLabel="Send Message" />
+            <ContactForm buttonLabel="Send Message" page="Home" />
           </div>
         </div>
       </section>

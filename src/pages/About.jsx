@@ -177,7 +177,7 @@ export default function About() {
 
       {/* Contact info cards */}
       <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto grid sm:grid-cols-3 gap-5">
+        <div className="max-w-5xl mx-auto grid sm:grid-cols-2 gap-5">
           <ContactCard title="Phone">
             <a href={SITE.phoneLink} className="text-master-gold hover:underline">
               {SITE.phone}
@@ -188,9 +188,6 @@ export default function About() {
               {SITE.email}
             </a>
           </ContactCard>
-          <ContactCard title="Business Address">
-            <p>{SITE.address}</p>
-          </ContactCard>
         </div>
       </section>
 
@@ -198,7 +195,7 @@ export default function About() {
       <section className="py-16 px-4 bg-master-surface">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-master-purple mb-6">Contact Us Now</h2>
-          <ContactForm />
+          <ContactForm page="About Us" />
         </div>
       </section>
     </Layout>

@@ -40,13 +40,12 @@ export default function Footer() {
               <a href={`mailto:${SITE.email}`} className="block text-white/70 hover:text-master-gold transition-colors">
                 {SITE.email}
               </a>
-              <p className="text-white/50">{SITE.address}</p>
             </div>
           </div>
 
           <div>
             <h3 className="font-semibold text-sm uppercase tracking-wider text-white/40 mb-4">Get in Touch</h3>
-            <p className="text-white/50 text-sm mb-4">Available for in-person and remote consultations across the UK.</p>
+            <p className="text-white/50 text-sm mb-4">Available for remote consultations across the UK.</p>
             <a
               href={SITE.phoneLink}
               className="inline-flex items-center gap-2 px-4 py-2.5 bg-master-gold text-master-dark text-sm font-medium rounded-xl hover:bg-master-gold-light transition-all"

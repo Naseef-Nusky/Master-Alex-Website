@@ -21,7 +21,7 @@ export default function BookAppointment() {
               <p className="text-master-muted text-sm mb-6">
                 Fill in your details and we&apos;ll confirm your booking shortly.
               </p>
-              <ContactForm showDate buttonLabel="Book Now" />
+              <ContactForm showDate buttonLabel="Book Now" page="Book Appointment" />
             </div>
 
             <div>

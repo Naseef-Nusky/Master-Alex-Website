@@ -14,6 +14,7 @@ import HusbandWifeProblems from './pages/HusbandWifeProblems'
 import LoveSpellCaster from './pages/LoveSpellCaster'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsConditions from './pages/TermsConditions'
+import ThankYou from './pages/ThankYou'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <Route path="/love-spell-caster" element={<LoveSpellCaster />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-and-conditions" element={<TermsConditions />} />
+      <Route path="/thank-you" element={<ThankYou />} />
     </Routes>
     </>
   )

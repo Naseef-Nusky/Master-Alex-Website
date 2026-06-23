@@ -3,13 +3,10 @@ import { RELIGION_IMAGES } from './religionImages'
 
 export const SITE = {
   name: 'Master Alex',
-  phone: '+44 20 1234 5678',
-  phoneLink: 'tel:+442012345678',
-  whatsappLink: 'https://wa.me/442012345678',
-  email: 'info@masteralex.com',
-  address: '123 Spiritual Way, UK',
-  mapEmbed:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0!2d-0.1276!3d51.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502ba3977%3A0x6c7c628f42cd7476!2sUK!5e0!3m2!1sen!2suk!4v1',
+  phone: '07503 390362',
+  phoneLink: 'tel:+447503390362',
+  whatsappLink: 'https://wa.me/447503390362', // WhatsApp buttons commented out in UI for now
+  email: 'info@masteralex.co.uk',
 }
 
 export const NAV_LINKS = [

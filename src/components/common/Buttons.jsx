@@ -40,7 +40,10 @@ export function CallButton({ className = '', compact = false, variant = 'primary
 }
 
 export function WhatsAppButton({ className = '', compact = false }) {
-  return (
+  // WhatsApp hidden for now — re-enable when ready
+  return null
+
+  /* return (
     <a
       href={SITE.whatsappLink}
       target="_blank"
@@ -51,7 +54,7 @@ export function WhatsAppButton({ className = '', compact = false }) {
       {!compact && <span>WhatsApp</span>}
       <span className="font-semibold">{SITE.phone}</span>
     </a>
-  )
+  ) */
 }
 
 export function PrimaryButton({ children, to, href, className = '', onClick }) {

@@ -129,6 +129,7 @@ export default function ServicePageLayout({
                   headingClassName={`text-2xl font-bold mb-6 ${
                     isDark ? 'text-white' : 'text-master-purple'
                   }`}
+                  formProps={{ page: title }}
                 />
               </div>
             </section>
@@ -187,7 +188,7 @@ export default function ServicePageLayout({
               </div>
             </div>
             <div>
-              <ContactForm />
+              <ContactForm page={title} />
             </div>
           </div>
         </section>
