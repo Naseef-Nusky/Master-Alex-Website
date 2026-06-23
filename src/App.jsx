@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import GoogleAnalytics from './components/common/GoogleAnalytics'
 import ScrollToTop from './components/common/ScrollToTop'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -19,6 +20,7 @@ import ThankYou from './pages/ThankYou'
 function App() {
   return (
     <>
+      <GoogleAnalytics />
       <ScrollToTop />
       <Routes>
       <Route path="/" element={<Home />} />
