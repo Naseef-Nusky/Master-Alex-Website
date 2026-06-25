@@ -1,6 +1,6 @@
-import psychicReading from '../assets/Psychic Reading.png'
+import psychicReading from '../assets/psychic-reading.png'
 import getExLoveBack from '../assets/Get Ex Love Back.png'
-import blackMagicRemoval from '../assets/Black Magic Removal.png'
+import blackMagicRemoval from '../assets/black-magic-removal.png'
 import negativeEnergyRemoval from '../assets/Negative Energy Removal.png'
 import spiritualHealing from '../assets/Spiritual Healing.png'
 import loveSpellCaster from '../assets/Love Spell Caster.png'

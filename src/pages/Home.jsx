@@ -4,11 +4,11 @@ import Layout from '../components/layout/Layout'
 import HeroSlider from '../components/common/HeroSlider'
 import ContactForm from '../components/common/ContactForm'
 import SectionHeading from '../components/common/SectionHeading'
+import ServiceCard from '../components/common/ServiceCard'
 import TestimonialsSlider from '../components/common/TestimonialsSlider'
 import {
   SITE,
   TOP_SERVICES,
-  RELIGIONS,
   ABOUT_HOME,
   WHY_CHOOSE,
   WHY_CHOOSE_INTRO,
@@ -42,76 +42,12 @@ const WHY_CHOOSE_ICONS = {
   ),
 }
 
-function ServiceCard({ service, index }) {
-  return (
-    <div
-      className="group card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col"
-      style={{ animationDelay: `${index * 80}ms` }}
-    >
-      <img
-        src={service.image}
-        alt={service.title}
-        className="w-full h-auto block"
-      />
-      <div className="p-4 flex flex-col flex-1">
-        <h3 className="text-lg font-bold text-master-purple mb-2">{service.title}</h3>
-        <p className="text-master-muted text-sm leading-relaxed flex-1 mb-4">{service.description}</p>
-        <div className="flex flex-wrap items-center justify-between gap-3 mt-auto">
-          <Link
-            to={service.path}
-            className="inline-flex items-center gap-1 text-sm font-semibold text-master-gold hover:gap-2 transition-all"
-          >
-            Read More
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-          <Link
-            to="/book-appointment"
-            className="inline-flex items-center justify-center px-4 py-2 bg-master-purple text-white text-sm font-semibold rounded-xl hover:bg-master-purple-light transition-colors"
-          >
-            Book An Appointment
-          </Link>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export default function Home() {
   const [openFaq, setOpenFaq] = useState(0)
 
   return (
     <Layout heroBehindHeader>
       <HeroSlider />
-
-      {/* Religions */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <SectionHeading
-            label="Inclusive"
-            title="All Religions Welcome"
-            description="Spiritual guidance rooted in respect for every belief system."
-          />
-          <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-4 sm:grid sm:grid-cols-3 lg:grid-cols-5">
-            {RELIGIONS.map((r) => (
-              <div
-                key={r.name}
-                className="flex h-28 w-[calc(50%-0.5rem)] flex-col items-center justify-between rounded-xl border border-gray-100 bg-master-surface p-2 transition-colors hover:border-master-gold/30 sm:h-32 sm:w-full"
-              >
-                <div className="flex flex-1 items-center justify-center">
-                  <img
-                    src={r.image}
-                    alt={r.name}
-                    className="max-h-14 max-w-full object-contain sm:max-h-16"
-                  />
-                </div>
-                <p className="text-center text-[11px] font-bold text-master-gold sm:text-xs">{r.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* About */}
       <section className="py-16 px-4 bg-white">
@@ -173,7 +109,7 @@ export default function Home() {
             title="Expert Spiritual Services"
             description="Personalized spiritual services for your unique situation."
           />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {HOME_SERVICES.map((s, i) => {
               const isLastAlone = i === HOME_SERVICES.length - 1 && HOME_SERVICES.length % 3 === 1
               return (
@@ -181,8 +117,8 @@ export default function Home() {
                   key={s.path}
                   className={
                     isLastAlone
-                      ? 'sm:col-span-2 sm:max-w-md sm:justify-self-center sm:w-full lg:col-span-1 lg:col-start-2'
-                      : ''
+                      ? 'h-full sm:col-span-2 sm:max-w-md sm:justify-self-center sm:w-full lg:col-span-1 lg:col-start-2'
+                      : 'h-full'
                   }
                 >
                   <ServiceCard service={s} index={i} />

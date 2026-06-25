@@ -1,5 +1,4 @@
 import { SERVICE_IMAGES } from './serviceImages'
-import { RELIGION_IMAGES } from './religionImages'
 
 export const SITE = {
   name: 'Master Alex',
@@ -102,14 +101,6 @@ export const TOP_SERVICES = [
     path: '/spiritual-healing',
     image: SERVICE_IMAGES['/spiritual-healing'],
   },
-]
-
-export const RELIGIONS = [
-  { name: 'Hinduism', image: RELIGION_IMAGES.Hinduism },
-  { name: 'Buddhism', image: RELIGION_IMAGES.Buddhism },
-  { name: 'Islam', image: RELIGION_IMAGES.Islam },
-  { name: 'Christianity', image: RELIGION_IMAGES.Christianity },
-  { name: 'Judaism', image: RELIGION_IMAGES.Judaism },
 ]
 
 export const ABOUT_HOME = {
