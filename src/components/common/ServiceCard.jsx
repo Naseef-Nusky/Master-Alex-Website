@@ -6,7 +6,7 @@ export default function ServiceCard({ service, index, className = '' }) {
       className={`group card-hover flex h-full flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm ${className}`}
       style={index != null ? { animationDelay: `${index * 80}ms` } : undefined}
     >
-      <div className="relative h-60 w-full shrink-0 overflow-hidden bg-master-surface sm:h-64">
+      <div className="relative h-64 w-full shrink-0 overflow-hidden bg-master-surface">
         <img
           src={service.image}
           alt={service.title}
